@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI ASSIGNMENT 3</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <style>
+        body{
+            margin:0;
+            font-size: medium;
+            font-family:"Source Sans Pro","Segoe UI",
+            "Helvetica Neue",Arial,sans-serif,
+            "Apple Color Emoji","Segoe UI Emoji",
+            "Segoe UI Symbol";        
+        }
+        img{
+            border-radius:5px;
+            max-width: 100%;
+            
+    
+        }
+        li{
+            float:left;
+        }
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:rgb(54, 52, 52);
+            
+        }
+        li a{
+        display:block;
+        color:rgb(196, 191, 191);
+        text-align:left;
+        padding:10px 22px;
+        text-decoration:none;
+        border-radius: 5px;
+        font-weight: bold;
+        }
+       
+      li.dropdown{
+        display:inline-block;
+      }
+      .dropdown-content{
+        display:none;
+        font-weight: bold;
+        background-color: rgb(54, 52, 52);
+        position:absolute;
+        max-width:180px;
+        box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content a:hover{
+        color:white;
+      }
+      li a:hover{
+        color:white;
+      }
+      .dropdown:hover .dropdown-content{
+        display:block;
+      }
+      .dropdown-content a{
+        color:rgb(196, 191, 191);
+        padding:12px 16px;
+        text-align:left;
+      }
+      .cse:hover{
+        background-color: blue;
+      }
+      .yellow-link {
+        color: #FFFF33; 
+        text-decoration: none; 
+      }
+      h3{
+        font-family: inherit;
+        font-weight: 600;
+      }
+    </style>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            position:relative;
+        }
+
+        .tb {
+            margin:0%;
+            width: 300px;
+            height: 150px;
+            border-collapse:collapse;
+            border-radius:5px;
+            position: relative;
+        }
+        .tb1 {
+            margin:0%;
+            border: 0%;
+            border-radius: 10px;
+            width: 300px;
+            height: 200px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        .thc {
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-family: inherit;
+            font-weight: 300;
+            background-color: #6ebed9;
+            border-bottom: none;
+            }
+            .thc th, .thc1 th, .thc3 th {
+                border-bottom: none;
+            }
+        
+        .a{
+            font-weight: 800;
+            
+        }
+        
+        .thc1{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-family: inherit;
+            
+            background-color: #40bb07;
+        }
+        .thc2{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-family: inherit;
+            font-weight: 300;
+            background-color: #eed709;
+        }
+        .thc3{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-family: inherit;
+            font-weight: 300;
+            background-color: #e21313;
+        }
+        th {
+            color: white;
+        }
+        
+    </style>
+    <style>
+        .container2{
+                display: flex;
+                justify-content: space-between;
+                margin: 5px;
+                position:relative;
+            }
+        .at{
+            color:black;
+            border: 2px solid #1C3564;
+        }
+    </style>
+    <style>
+            .container3 {
+                display: flex;
+                justify-content: space-between;
+                margin: 5px;
+                position: relative;
+            }
+        
+            .at {
+                width: 50%;
+                border-collapse: collapse;
+                border: 0px solid rgb(99, 98, 98); 
+            }
+        
+            .at td, td {
+                border: 0px;
+                padding: 8px;
+                font-weight: 400px;
+                font-size: larger;
+                border-bottom: 1px solid rgb(99, 98, 98);
+            }
+        
+            .td1 {
+                background-color: black;
+                color: white;
+                font-weight: 600px;
+                font-size: large;
+            }
+        
+        </style>
+        <style>
+          .bo {
+                border-bottom: none;
+            }
+           
+        </style>
+        
+   
+    </head>
+<body><ul>
+    <img src="https://karthikambaragonda.github.io/3i/h1.png">
+    
+        <li class="dropdown">
+            <a href="#">Home</a>
+        </li>
+            <li class="dropdown">
+                <a class="dropdown" href="#">Academic Detais </a>
+                <div class="dropdown-content">
+                    <a href="#">View Academic Regulations</a>
+                    <a href="#">View Syllabus</a>
+                    <a href="#">View Master TT</a>
+                    <a href="#">List of Holidays | Working Days</a>
+                    <a href="#">View Circulars</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a  class="dropdown" href="#">Profile </a>
+                <div class="dropdown-content">
+                    <a href="#">View Profile</a>
+                    <a href="#">Update Profile</a>
+                    <a href="#">Upload Aadhaar</a>
+                    <a href="#">Upload Signature</a>
+                    <a href="#">Exit Survey</a>
+                    <a href="#">Exit Survey Report</a>
+            </li>
+            <li class="dropdown">
+                <a  class="dropdown" href="#">Course Registration </a>
+                <div class="dropdown-content">
+                    <a href="#">Register</a>
+                    <a href="#">View CS Status</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a  class="dropdown" href="#">Attendence </a>
+                <div class="dropdown-content">
+                    <a href="#">Day wise Report</a>
+                    <a href="#">Month wise Report</a>
+                    <a href="#">Subject wise Report</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a  class="dropdown" href="#">Fee Payment</a>
+              
+            </li>
+            <li class="dropdown">
+                <a  class="dropdown" href="#">Internals </a>
+                <div class="dropdown-content">
+                    <a href="#">View Internal Mark(T&P)</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown" href="#">Feedback </a>
+                <div class="dropdown-content">
+                    <a href="#">Submit Feedback</a>
+                </div>
+            </li>
+            <li  class="dropdown">
+                <a class="dropdown" href="#">Grievance </a>
+                <div class="dropdown-content">
+                    <a href="#">Submit Grievance</a>
+                    <a href="#">Grievance Status</a>
+    
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown" href="#"> Change Password</a>
+        
+            </li>
+    </ul>
+    <div align="right" style="background-color:black">
+        <span style="color:#FFFF33"><b>Welcome to <b>AMBARAGONDA KARTHIK</b>-2203A51663 </b>
+        </span>
+        <span>
+            <a href="#" class="yellow-link">&nbsp;Logout</a>
+            &nbsp;&nbsp;
+            </span>
+        <img src="https://karthikambaragonda.github.io/3i/1.jpg" width="20" height="20"  style="border-radius: 10% / 15%;">&nbsp;&nbsp;
+        </div>
+        <table align="center" class="table">
+            <tr>
+            <td class="bo">
+                <img src="https://karthikambaragonda.github.io/3i/1.jpg" width="90" height="110" style="border-radius: 60% / 70%;"></td>
+           
+            <td class="bo">
+           
+           <h3 align="center"> 
+           2203A51663 - AMBARAGONDA KARTHIK  <br>
+           Father Name - AMBARAGONDA SANTHOSH 
+             </h3> 
+           </td>
+           </tr>
+           </table>
+           <br>
+           <div class="container">
+            <table class="tb">
+                <tr>
+                    <th align="left" class="thc">
+                        <span style="font-size: 25px" class="a">&nbsp;&nbsp;&nbsp;2-1</span><br>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Year-Sem
+                    </th>
+                </tr>
+                <tr style="background-color: rgb(29, 149, 170);">
+                    <th><a href="#" style="text-decoration: none; color: white">More info <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span></a></th>
+                </tr>
+            </table>
+    
+            <table class="tb">
+                <tr>
+                    <th align="left" class="thc1">
+                        <span style="font-size: 25px" class="thc1" style="font-weight:800">&nbsp;&nbsp;&nbsp;100</span><br>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Attendance %</span>
+                    </th>
+                </tr>
+                <tr style="background-color: rgb(49, 173, 40);">
+                    <th><a href="#" style="text-decoration: none; color: white">More info<span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span></a></th>
+                </tr>
+            </table>
+    
+            <table class="tb">
+                <tr>
+                    <th align="left" class="thc2">
+                        <span style="font-size: 25px;color:rgb(6, 6, 6)" class="thc2">&nbsp;&nbsp;&nbspVery soon</span><br>
+                        <span style="color: rgb(6, 6, 6)"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Academic Results (Backlogs :N/A)</span>
+                    </th>
+                </tr>
+                <tr style="background-color: rgba(234, 219, 10, 0.866);">
+                    <th><a href="#" style="text-decoration: none; color: rgb(6, 6, 6)">More info <span class="material-symbols-outlined">
+                        arrow_circle_right
+                        </span></a></th>
+                </tr>
+                <table class="tb1">
+                    <tr>
+                        <th align="left" class="thc3">
+                            <span style="font-size: 15px;" class="thc3">&nbsp;&nbsp;&nbsp;T RAGHU
+                           <br>&nbsp;&nbsp;&nbsp;9014918760</span><br>
+                        <span style="font-size: 15px;" class="thc3"><br>
+                            &nbsp;&nbsp;&nbsp;TB Prasad Reddy
+                            <br>
+                            &nbsp;&nbsp;&nbsp;7396386638<br>
+                            &nbsp;&nbsp;&nbsp;Mentoring Staff
+                        </span>    
+                        </th>
+                       
+                    </tr>
+                    <tr style="background-color: rgba(244, 69, 5, 0.988);">
+                        <th><a href="#" style="text-decoration: none; color: white">More info &nbsp;<span class="material-symbols-outlined">
+                            arrow_circle_right
+                            </span> </a></th>
+                    </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+       <div class="container3">
+    <table class="at">
+        <tr>
+            <td class="td1" colspan="3">
+                &nbsp; Last Week Attendance %
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;S.No</td>
+            <td>Date</td>
+            <td>%</td>
+        </tr>
+        <tr>
+            <td>&nbsp;1</td>
+            <td><a href="#" style="text-decoration: none;color:blue;">11-08-2023</a></td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>&nbsp;2</td>
+            <td><a href="#" style="text-decoration: none;color:blue;">10-08-2023</a></td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>&nbsp;3</td>
+            <td><a href="#" style="text-decoration: none;color:blue;">09-08-2023</a></td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>&nbsp;4</td>
+            <td><a href="#" style="text-decoration: none; color:blue;">08-08-2023</a></td>
+            <td>100</td>
+        </tr>
+    </table>
+    &nbsp;&nbsp;&nbsp;
+    <table class="at">
+        <tr>
+            <td class="td1" colspan="3">
+                &nbsp; Course Wise Attendance %
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;S.No</td>
+            <td>Course</td>
+            <td>%</td>
+        </tr>
+        <tr>
+            <td>&nbsp;1</td>
+            <td><a href="#" style="text-decoration: none;color:blue;">Data Structures</a></td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>&nbsp;2</td>
+            <td><a href="#" style="text-decoration: none;color:blue;">Human Computer Interface</a></td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>&nbsp;3</td>
+            <td><a href="#" style="text-decoration: none;color:blue;">Microprocessors and computer architecture</a></td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>&nbsp;4</td>
+            <td><a href="#" style="text-decoration: none; color:blue;">Data Structures</a></td>
+            <td>100</td>
+        </tr>
+    </table>
+</div>
+       <br>
+       <br>
+        <div class="" style="background-color: #1C3564; color: #FFFFFF; height: 70px; text-align: center; line-height: 70px;">
+            <p>&copy; Center for Software Development and Digital Learning, SR University.</p>
+        </div>
+    </body>
+</html>
